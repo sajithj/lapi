@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Channel extends Model
 {
+    protected $fillable = [
+      'channel_no', 'channel_name', 'epg_date', 'program_id', 'epg_start_time', 'epg_end_time'
+    ];
+    
     use HasFactory;
 }
